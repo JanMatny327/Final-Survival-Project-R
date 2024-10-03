@@ -82,7 +82,6 @@ public class BossSystem : MonoBehaviour
         isBossRoom();
         BossLevel();
         HandleHp();
-        lookPlayer();
     }
 
     void HandleHp()
@@ -256,6 +255,7 @@ public class BossSystem : MonoBehaviour
             }
         }
         Idle();
+        lookPlayer();
         yield return endOfPatternWait;
         BossPattern();
     }
